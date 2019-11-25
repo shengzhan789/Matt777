@@ -1,0 +1,119 @@
+
+.feature
+{
+    padding: 20px;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+/**Font for heading tags**/
+h1, h4
+{
+    font-family: 'Baskervville', serif;
+}
+
+/**Container for headings**/
+.header
+{
+  color: black;
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-bottom: 30%;
+  font-size: 150%;
+}
+
+/**Add in the background image**/
+.parallax
+{
+  display: block;
+  overflow: hidden; /**Hides the part of a content when it is too big inside a container**/
+  background-image: url("images/background5.jpg"); /**Sets the background image**/
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/**Styling the foreground container**/
+.foreground-container
+{
+  padding-bottom: 20%;
+}
+.head-sample
+{
+  margin-top: 0.5%;
+  text-align: center;
+  font-size: 250%;
+}
+.table1
+{
+  width: 50%;
+  padding-top: 5%;
+
+}
+.table1 td
+{
+  display: absolute;
+  position: relative; /**The element is positioned relative to it's original position**/
+  text-align: center;
+  padding: 0%;
+
+}
+/*Overlay*/
+.overlay
+{
+  position: absolute; /**Allows the element to be placed exactly where you want it to be**/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0,0,0,0.5);
+}
+
+/**Make overlay container appear on mouse hover**/
+.feature:hover .overlay
+{
+  opacity: 1;
+}
+
+.text
+{
+  position: absolute;
+  color: white;
+  font-family: 'Baskervville';
+  font-size: 250%;
+  top: 45%;
+  left: 35%;
+}
+.ending
+{
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 150%;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  padding-top: 24%;
+  padding-bottom: 15%;
+
+}
+
+.parallax2
+{
+  display: block;
+  overflow: hidden;
+  background-image:url("images/background6.jpg");
+  width: 100%;
+  height: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
